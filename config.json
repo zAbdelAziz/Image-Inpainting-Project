@@ -1,0 +1,35 @@
+{
+  "mode": "test",
+  "tester_config":{
+    "input_dir": "inputs",
+    "output_dir": "outputs",
+    "models_dir": "models",
+    "type": "pkl",
+    "plot": 0
+  },
+  "trainer_config": {
+    "input_dir": "inputs",
+    "output_dir": "results",
+    "print_at": 10,
+    "plot_at": 25,
+    "validate_at": 25,
+    "save_at": 20,
+    "input_image_size": [100,100],
+    "min_offset": 0,
+    "max_offset": 8,
+    "min_spacing": 2,
+    "max_spacing": 6,
+    "min_pixels": 144,
+    "batch_size": 64,
+    "learning_rate": 1e-3,
+    "weight_decay": 1e-5,
+    "n_updates": 50,
+    "resume": 0
+  },
+  "network_config": {
+    "n_hidden_layers": 3,
+    "n_in_channels": 3,
+    "n_kernels": 64,
+    "kernel_size": 3
+  }
+}
